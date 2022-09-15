@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFE7E7;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+:focus{
+    outline: none;
+}
+
+.container{
+    margin: 4rem 6rem;
+    max-width: 100%;
+}
+
+/* ------------------title------------------ */
+
+.title{
+    /* font-family: 'Oswald', sans-serif; */
+    font-size: 6rem;
+    font-weight: 700;
+    color: #174D66;
+    padding-bottom: 0;
+}
+
+.red{
+    color: #F13D38;
+}
+
+
+/* ------------input------------------ */
+.width{
+    width: 80%;
+   margin: 4rem auto;
+   display: flex;
+   justify-content: center;
+}
+
+form{
+    width: 60%;
+}
+
+img{
+    width: 20rem;
+    height: 20rem;
+    margin: auto 5rem;
+}
+
+
+.two{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    font-size: 2rem;
+    color: #174D66;
+}
+
+input{
+    border: none;
+    background-color: #FFE7E7;
+    border-bottom: 2px solid #174D66;
+    padding: 1.5rem 1.5rem 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+.drop{
+    margin-top: 1rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    color: #174D66;
+    background-color: #FFE7E7;
+    outline: none;
+}
+
+
+
+/* -------------button--------------- */
+
+
+
+
+.button{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 1.5rem 2rem;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    color: #FFE7E7;
+    background-color: #f13d38;
+    border: #f13d38 3px solid;
+    border-radius: 4rem;
+    transition: ease-in 0.35s;
+}
+
+button:hover{
+
+    color: #f13d38;
+    border: #f13d38 3px solid;
+    background-color: #FFE7E7;
+    transform: translateY(-0.5rem);
+}

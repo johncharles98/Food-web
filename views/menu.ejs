@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <title>Menu</title>
+</head>
+<body>
+
+        <!-- -------------------nav-bar-------------------------- -->
+<nav class="container">
+    <img class="logo" src="/images/logo.png" alt="">
+
+    <ul class="menu">
+        <ul class="menu">
+            <ul class="menu">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/menu">Menu</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </ul>
+    </ul>
+
+    <ul class="icon">
+        <li><a href="/cart"><span class="material-icons">
+        shopping_cart
+         </span></a></li>
+        <li><a href="/logout"><span class="material-icons">
+        logout
+        </span></a></li>
+    </ul>
+
+</nav>
+    
+<!-- --------------- menu section --------------- -->
+    <div class="menu-background">
+        <p>DISCOVER WHAT’S NEW</p>
+        <h1><span>AND </span>ORDER ONLINE</h1>
+    </div>
+
+<section>
+    <div class="container menu-content">
+        <p>Pick Your Taste</p>
+        <h2>EXPLORE MENU</h2>
+    </div>
+    
+    <div class="groupmenu">
+        <div class="sub-menu">
+            <img class="menu-img" src="./images/pizzamenu.png" alt="">
+            <p>PIZZA</p>
+        </div>
+        <div class="sub-menu">
+            <img class="menu-img" src="./images/burgermenu.png" alt="">
+            <p>BURGER</p>
+        </div>       
+        <div class="sub-menu">
+            <img class="menu-img" src="./images/noodlesmenu.png" alt="">  
+            <p>NOODLE</p>
+        </div>     
+    </div>
+</section>
+
+<section class="container products">
+<% foods.forEach(food => {  %>
+  <div class="card">
+    <form  action="/additem/<%= food._id %>" method="POST">
+        <button class="add-to-cart" type="submit" >+</button>
+        <div class="image-div">
+            <img src="./uploads/<%= food.image %>"  class="food-image" alt="">
+        </div>  
+        <h3><%= food.name %></h3>
+        <div class="sub-card">
+            <p class="cost">₹<%= food.price %></p>
+            <div class="quantity">
+                <button type="button" onclick="decrement(event)" href="">-</button>
+                <input type="text" class="number"  name="root" value="0"></input>
+                <button type="button" onclick="increment(event)" href="">+</button>
+            </div>
+        </div>
+    </form>  
+    </div>
+ <% }) %>   
+
+</section>
+
+<script src="js/menu.js"></script>
+</body>
+</html>

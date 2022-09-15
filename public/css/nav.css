@@ -1,0 +1,71 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    align-items: center;
+    /* padding: 2.5rem 0; */
+}
+
+.logo{
+   width: 8rem;
+   height: auto;
+}
+
+.menu, .icon{
+    display: flex;
+
+}
+
+.menu li a{
+    font-size: 2rem;
+    margin: 0 3rem;
+    color: #174D66;
+    font-weight: 500;
+    transition: ease-in 0.35s;
+}
+
+.menu li a:hover{
+    color: #F13D38;
+}
+
+.hamburger, .icon li a {
+    padding: 0.5rem;
+    margin: 0 1rem;
+    color: #F13D38;
+    transition: ease-in 0.35s;
+   
+}
+
+.material-icons{
+    font-size: 3rem;
+    color: #F13D38;
+}
+
+.icon li a:hover{
+    color: #174D66;
+}
+
+.icon{
+    background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.hamburger{
+    color: #f13d38;
+    background: transparent;
+    font-size: 3rem;
+    cursor: pointer;
+    border: none;
+    display: none;
+    margin-left: 1.5rem;
+}
+
+.hamburger:focus{
+    outline: none;
+}
+
+.hamburger:hover{
+    border: none;
+    color: #174D66;
+}

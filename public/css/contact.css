@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFE7E7;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+:focus{
+    outline: none;
+}
+
+.container{
+    margin: 4rem 6rem;
+    max-width: 100%;
+}
+
+.hero{
+    display: flex;
+}
+
+/* -------------------------left------------------- */
+
+.left{
+    width: 50%;
+}
+
+.title{
+    /* font-family: 'Oswald', sans-serif; */
+    font-size: 8rem;
+    font-weight: 700;
+    color: #174D66;
+    padding-bottom: 0;
+}
+
+.red{
+    color: #F13D38;
+}
+
+.para{
+    font-size: 3rem;
+    color: #174D66;
+}
+
+.call{
+    font-size: 2.5rem;
+    color: #F13D38;
+    margin-top: 14rem;
+}
+
+.mail{
+    font-size: 2.5rem;
+    color: #174D66;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.material-icons{
+    padding-right: 1rem;
+}
+
+.social{
+    display: flex;
+    /* justify-content: center; */
+    padding: 3rem 0 0 0;
+    position: relative;
+}
+
+.social li a {
+    padding: 0.5rem;
+    margin: 0 1rem;
+    color: #174D66;
+    transition: ease-in 0.35s;
+    font-size: 3rem;
+}
+
+.social li a:hover{
+    color: #f13d38;
+}
+
+.social li .fb{
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/* -----------------------------right---------------------- */
+
+.right{
+    width: 50%;
+}
+
+.two{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    font-size: 2rem;
+    color: #174D66;
+}
+
+input{
+    border: none;
+    background-color: #FFE7E7;
+    border-bottom: 2px solid #174D66;
+    padding: 1.5rem 1.5rem 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    color: #FFE7E7;
+    background-color: #f13d38;
+    border: #f13d38 3px solid;
+    border-radius: 4rem;
+    transition: ease-in 0.35s;
+}
+
+button:hover{
+    color: #f13d38;
+    border: #f13d38 3px solid;
+    background-color: #FFE7E7;
+    transform: translateY(-0.5rem);
+}
+
+button span{
+    color: #fff;
+    padding-left: 1rem;
+    padding-right: 0;
+}
+
+/* ----------------------------media--------------------------- */
+
+@media (max-width: 1090px) {
+    
+    .hero{
+        flex-direction: column;
+        
+    }
+
+    .left, .right{
+        margin: 0 auto;
+    }
+
+    .left{
+        text-align: center;
+    }
+
+    .mail{
+        justify-content: center;
+    }
+
+    .social{
+        justify-content: center;
+    }
+
+    .right{
+        margin-top: 3rem;
+        width: 70%;
+    }
+
+    .two{
+        padding-left: 0;
+    }
+
+    .button{
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 665px) {
+ 
+    .left, .right{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+}

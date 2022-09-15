@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="/css/admin.css">
+     <link rel="stylesheet" href="/css/nav.css">
+    <title>Update Food</title>
+</head>
+<body>
+
+    <nav class="container">
+        <div class="logo">
+            <a href="/home">LOGO</a>
+        </div>
+    
+        <ul class="icon">
+            <li><a href="/admin"><li><a href="/admin"><span class="material-icons-outlined">
+            add_circle
+            </span></a></li></a></li>
+            <li><a href="/logout"><span class="material-icons">
+            logout
+            </span></a></li>
+        </ul>
+    
+    </nav>
+
+    <div class="title container">Update In <span class="red">Menu</span></div>
+    
+    <section class="input container width">
+        <img src="/./uploads/<%= foods.image %>" alt="">
+        <form action="/update/<%= foods._id %>" method="POST">
+            <div class="two">
+                <label>Product Name</label>
+                <input type="text" name="name" id="name" value="<%= foods.name %>">
+            </div>
+            <div class="two">
+                <label>Price</label>
+                <input type="text" name="price" id="price" value="<%= foods.price %>">
+            </div>
+            <button type="submit" class="button">Update</button>
+        </form>
+    </section>
+</body>
+</html>

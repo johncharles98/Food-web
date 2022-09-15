@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="css/cart.css">
+      <link rel="stylesheet" href="css/nav.css">
+    <title>Your Cart</title>
+</head>
+<body>
+ 
+    <nav class="container">
+        <img class="logo" src="/images/logo.png" alt="">
+           <ul class="menu">
+               <li><a href="/home">Home</a></li>
+               <li><a href="/menu">Menu</a></li>
+               <li><a href="/contact">Contact</a></li>
+           </ul>
+   
+       <ul class="icon">
+           <li><a href="/cart"><span class="material-icons">shopping_cart</span></a></li>
+           <li><a href="/logout"><span class="material-icons">logout</span></a></li>  
+       </ul>
+        
+       <button class="hamburger" id="hamburger">
+           <i class='bx bx-menu btn-open'></i>
+         </button>
+   
+    </nav>
+<!-- -----------------------------label-------------------- -->
+
+<div class="title container">
+    <%= name %> <span class="red">Cart</span> 
+</div>
+
+<section class="label container">
+    
+    <div class="product">
+        PRODUCT
+    </div>
+
+        <div class="category">
+            PRICE
+        </div>
+
+        <div class="category">
+            QUANTITY
+        </div>
+
+        <div class="category">
+            TOTAL
+        </div>
+
+</section>
+
+<!-- ---------------------------item------------------------- -->
+
+<section class="item">
+<% orders.forEach(order => {  %>
+    <div class="single container">
+       <div class="item-name product">
+           <img class="product-image" src="./uploads/<%= order.image %>" alt="">
+           <div class="red"><%= order.name %></div>
+       </div>
+   
+       <span class="category price">&#8377;<%= order.price %></span>
+   
+       <div class="category quantity price"><%= order.qty %></div>
+   
+       <span class="category price">&#8377;<%= order.qty * order.price %></span>  
+       
+       <form action="/delete/<%= order._id %>" method="POST">
+           <button type="submit" class="x"><i class='bx bx-x'></i></a>
+       </form>
+    </div> 
+    
+<% }) %>
+   
+
+
+<!-- ------------------------------total--------------------------- -->
+ 
+<section class="total container">
+    <div class="final red"> 
+        TOTAL - <span class="cost">&#8377;<%= total %></span>
+    </div>
+    <button type="submit" class="button">CHECKOUT</button>
+</section>
+
+</body>
+</html>

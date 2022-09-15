@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <title>Add Food</title>
+</head>
+<body>
+    
+    <nav class="container">
+        <img class="logo" src="/images/logo.png" alt="">
+    
+        <ul class="icon">
+            <li><a href="/admin">+</a></li>
+            <li><a href="/logout"><span class="material-icons">
+            logout
+            </span></a></li>
+        </ul>
+    
+    </nav>
+
+
+    <div class="title container">Add In <span class="red">Menu</span></div>
+
+
+    <section class="input container width">
+        <form action="/add" method="POST" enctype="multipart/form-data">
+            <div class="two">
+                <label>Product Name</label>
+                <input type="text" name="name" id="name" required class="">
+            </div>
+            <div class="two">
+                <label>Price</label>
+                <input type="text" name="price" id="price" required class="">
+            </div>
+            <div class="two">
+                <label for="foodtypes"  >Choose a type:</label>
+                 <select id="type" name="type" class="drop">
+                 <option value="Pizza">Pizza</option>
+                 <option value="Burger">Burger</option>
+                 <option value="Noodles">Noodles</option>
+                </select>
+            </div>
+            <div class="two">
+                <label>Image</label>
+                <input type="file" required class="btn-img text " name="image" id="image" value="Upload">
+            </div>
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </section>
+
+
+</body>
+</html>

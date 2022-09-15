@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    background-image: url("./image/signbg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #F13D38;
+    font-family: 'Oswald', sans-serif;
+}
+
+.form{
+    background-color: #eee1e1b9;
+    box-sizing: border-box; 
+    box-shadow: 5px 5px rgba(212, 185, 185, 0.329);
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    width: 35rem; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title{
+    font-family: 'Oswald', sans-serif;
+    color: #f13d38;
+    text-align: center;
+    font-size: 3.5rem;  
+}
+
+.title span {
+    color: #174D66;
+}
+
+.material-icons{
+    height: 5rem;
+}
+
+input{
+    width: 80%;
+    padding: 0.5em 1rem;
+    margin: 1rem;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    border-bottom: 2.5px solid rgba(0, 0, 0, 0.5);
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+    width: 8rem;
+    height: auto;
+ }
+
+.input::placeholder{
+    color: #174D66;
+}
+
+.input{
+    color: #174D66;
+}
+
+button{
+    margin: 2em auto 2em;
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: #f13d38;
+    border: #f13d38 3px solid;
+    border-radius: 3rem;
+    transition: ease-in 0.35s;
+}
+button:hover{
+    color: #f13d38;
+    border: #f13d38 3px solid;
+    background-color: white;
+    transform: translateY(-0.5rem);
+}
+
+.warning{
+    color: red;
+    opacity: 0.8;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.aha{
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+a{
+    font-weight: 700;
+    color: #174D66;
+}
+
+/* ------------------media------------------------ */
+
+@media (max-width: 1090px) {
+    
+    .form{
+        width: 50%;
+    }
+}
+
+@media (max-width: 665px) {
+    
+    .form{
+        height: 38rem;
+    }
+
+    button{
+        font-size: 0.8rem;
+    }
+}

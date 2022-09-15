@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFE7E7;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container{
+    padding: 4rem 6rem;
+}
+
+/* -------------------------- navbar-------------------  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    align-items: center;
+    /* padding: 2.5rem 0; */
+}
+
+.logo a{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #F13D38;
+
+}
+
+.menu, .icon{
+    display: flex;
+
+}
+
+.menu li a{
+    font-size: 2rem;
+    margin: 0 3rem;
+    color: #174D66;
+    font-weight: 500;
+    transition: ease-in 0.35s;
+}
+
+.menu li a:hover{
+    color: #F13D38;
+}
+
+.hamburger, .icon li a {
+    padding: 0.5rem;
+    margin: 0 1rem;
+    color: #F13D38;
+    transition: ease-in 0.35s;
+   
+}
+
+.material-icons{
+    font-size: 3rem;
+    color: #F13D38;
+}
+
+.icon li a:hover{
+    color: #174D66;
+}
+
+.icon{
+    background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.hamburger{
+    color: #f13d38;
+    background: transparent;
+    font-size: 3rem;
+    cursor: pointer;
+    border: none;
+    display: none;
+    margin-left: 1.5rem;
+}
+
+.hamburger:focus{
+    outline: none;
+}
+
+.hamburger:hover{
+    border: none;
+    color: #174D66;
+}
+
+/* ----------------------------- menu poster -------------------------  */
+
+.menu-background{
+    background-image: url('./image/menuimage.jpg');
+    font-family: 'Oswald', sans-serif;
+    height: 60vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-content{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 4rem 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.menu-content p{
+    color: #174D66;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.menu-content h2{
+    margin-top: -2rem;
+    color: #F13D38;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.menu-background p {
+    font-size: 3.6rem;
+    color: #FFE7E7;
+}
+
+.menu-background h1{
+    margin-top: -3rem;
+    font-size: 8rem;
+    color: #F13D38;
+}
+
+.menu-background h1 span{
+    font-size: 4.8rem;
+    color: #fff;
+}
+
+.groupmenu{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 8rem;
+    width: 100%;
+    position: relative;
+}
+
+
+.groupmenu:after {
+    content: '';
+    width: 50%;
+    border-bottom: solid 0.3rem #174D66;
+    position: absolute;
+    left: 25%;
+    top: 100%;
+    z-index: 1;
+}
+
+.sub-menu{
+    width: 30%;
+    position: relative;
+}
+
+.sub-menu p{ 
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+.sub-menu p:hover{
+    opacity: 1;
+}
+
+/* -------------------------- products ------------------------  */
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    background-color: #fff;
+    width: 20rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    margin: 0 6rem 4rem 0;
+    position: relative;
+}
+
+.card h3{
+    font-size: 2rem;
+    color: #F13D38;
+    padding-bottom: 0.5rem;
+}
+
+.sub-card{
+    color: #174D66;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 2rem;
+}
+
+.cost{
+    font-size: 1.6rem;
+    color: #174D66;
+}
+
+.quantity{
+    display: flex;
+}
+
+button{
+    padding: 0.1rem 0.5rem;
+    border: none;
+    background-color: #174D66;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.number{
+    background-color: #fff;
+    color: #F13D38;
+    width:2rem;
+}
+
+.add-to-cart{
+    background-color: #F13D38;
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+}
+
+.image-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 17rem;
+}
+
+.food-image{
+    width: 90%;
+    height: auto;
+}
+
+

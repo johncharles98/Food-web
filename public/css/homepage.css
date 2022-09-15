@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFE7E7;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container{
+    padding: 4rem 6rem;
+}
+
+
+
+/* ------------------------hero-section-------------------------- */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text{
+    margin-top: 1.5rem;
+    font-size: 8rem;
+    font-weight: 700;
+    color: #174D66;
+}
+
+.red{
+    color: #F13D38;
+}
+
+.hero p{
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 3rem; 
+    margin-bottom: -3rem;
+}
+
+.btn{
+    margin: -7rem 0 0 0;
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #FFE7E7;
+    background-color: #f13d38;
+    border: #f13d38 3px solid;
+    border-radius: 4rem;
+    transition: ease-in 0.35s;
+}
+
+.btn:hover{
+    color: #f13d38;
+    border: #f13d38 3px solid;
+    background-color: #FFE7E7;
+    transform: translateY(-0.5rem);
+}
+
+.model{
+    margin-top: -14rem;
+    z-index: -1;
+}
+
+/* ------------------------design----------------------- */
+
+.design{
+    margin-top: 1.5rem;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #174D66;
+    text-align: center;
+}
+
+.skill{
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+}
+
+.order img{
+    margin: 3rem 0;
+}
+
+/* ----------------footer------------------- */
+
+footer{
+    align-items: center;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    padding: 5rem 3rem 2rem;
+    position: relative;
+}
+
+.social li a {
+    padding: 0.5rem;
+    margin: 0 1rem;
+    color: #174D66;
+    transition: ease-in 0.35s;
+    font-size: 5rem;
+}
+
+.social li a:hover{
+    color: #f13d38;
+}
+
+.logos{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #f13d38;
+}
+
+.social:before {
+    content: '';
+    width: 50%;
+    border-bottom: solid 0.5rem #174D66;
+    position: absolute;
+    left: 25%;
+    top: 0;
+    z-index: 1;
+}
+
+/* --------------------media-------------------- */
+
+@media (max-width: 1090px) {
+    
+.hero{
+    flex-direction: column;
+}
+
+.text{
+    justify-content: center;
+    text-align: center;
+}
+
+.model{
+    margin-top: 0;
+}
+
+
+.skill{
+    flex-direction: column;
+}
+
+.hamburger{
+    display: block;
+}
+
+.menu, .icon{
+    display: none;
+}
+
+    
+}
+
+@media (max-width: 665px) {
+    
+.text{
+    font-size: 6rem;
+}
+
+.hero p{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.design{
+    font-size: 3.5rem;
+}
+
+.skill{
+    font-size: 3rem;
+}
+}
