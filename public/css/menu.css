@@ -204,8 +204,9 @@ nav{
 
 .card{
     background-color: #fff;
-    width: 20rem;
-    padding-left: 2rem;
+    width: 28rem;
+    border-radius: 20px;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,14 +216,21 @@ nav{
 }
 
 .card h3{
-    font-size: 2rem;
-    color: #F13D38;
+    font-size: 4rem;
+    font-weight: 500;
+    color: #174D66;
     padding-bottom: 0.5rem;
+}
+
+.card p{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: grey;
 }
 
 .sub-card{
     color: #174D66;
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -231,16 +239,26 @@ nav{
 }
 
 .cost{
-    font-size: 1.6rem;
-    color: #174D66;
+    font-size: 2rem !important;
+    font-weight: 500 !important;
+    color: #F13D38 !important;
 }
 
 .quantity{
     display: flex;
 }
 
+.input-quantity{
+    text-align: center;
+    width: 30px;
+    padding: 3px 0;
+    font-size: 1.5rem;
+    border: 2px solid #174D66;
+}
+
 button{
     padding: 0.1rem 0.5rem;
+    width: 20px;
     border: none;
     background-color: #174D66;
     color: #fff;
@@ -254,26 +272,41 @@ button{
 }
 
 .add-to-cart{
-    background-color: #F13D38;
-    font-size: 2rem;
-    color: #fff;
+    background-color: #fff;
+    text-shadow: 2px 2px rgba(99, 93, 93, 0.64);
+    color: #F13D38;
+    width: 30px;
+    font-size: 4.5rem;
+    font-weight: 500;
     position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;
+    font-weight: 300;
+    right: 2rem;
+    top: 0rem;
     padding: 0.5rem 1rem;
-    border-radius: 5rem;
+    border-radius: 10rem;
 }
 
 .image-div{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 17rem;
+    height: 20rem;
+    margin-bottom: 20px;
 }
 
 .food-image{
-    width: 90%;
+    width: 80%;
     height: auto;
 }
+
+.image-div:after {
+    content: '';
+    width: 100%;
+    border-bottom: solid 0.3rem #F13D38;
+    position: absolute;
+    z-index: 1;
+    top: 55%;
+}
+
 
 
