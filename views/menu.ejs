@@ -69,16 +69,17 @@
 <% foods.forEach(food => {  %>
   <div class="card">
     <form  action="/additem/<%= food._id %>" method="POST">
-        <button class="add-to-cart" type="submit" >+</button>
+        <button class="add-to-cart" type="submit">+</button>
         <div class="image-div">
             <img src="./uploads/<%= food.image %>"  class="food-image" alt="">
         </div>  
         <h3><%= food.name %></h3>
+        <p>Paneer, Onion , Corn</p>
         <div class="sub-card">
             <p class="cost">₹<%= food.price %></p>
             <div class="quantity">
                 <button type="button" onclick="decrement(event)" href="">-</button>
-                <input type="text" class="number"  name="root" value="0"></input>
+                <input class="input-quantity" type="text" class="number"  name="root" value="0"></input>
                 <button type="button" onclick="increment(event)" href="">+</button>
             </div>
         </div>

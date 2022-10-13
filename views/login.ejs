@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <meta
+      name="google-signin-client_id"
+      content="969755449368-p3404cko5vndmrkqh1n66ic3rtmtfg0h.apps.googleusercontent.com"
+    />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
       <link rel="stylesheet" href="css/signup.css">
     <title>Canteen</title>
 </head>
 <body>    
-    <form action="/signin" method="POST">
+    <form action="/login/auth/google" method="post">
     <div class="form" >
         <h3 class="title"><span>Missed</span> Us?</h3>
         <img class="logo" src="/images/logo.png" alt="">
@@ -20,8 +26,26 @@
             <div>
                 <input class="input" type="password" placeholder="Password" id="password" name="password" required></input>
             </div>
-        <p class="warning"><%= message %></p>
+        <!-- <p class="warning"><%= message %></p> -->
         <div><button type="submit" class="button">SIGN IN</button></div>
+        <p class="or">OR</p>
+        <div class="google-div">
+            <div
+              id="g_id_onload"
+              data-client_id="969755449368-p3404cko5vndmrkqh1n66ic3rtmtfg0h.apps.googleusercontent.com"
+              data-login_uri="http://localhost:3000/login/auth/google"
+              data-auto_prompt="false"
+            ></div>
+            <div
+              class="g_id_signin"
+              data-type="standard"
+              data-size="large"
+              data-theme="outline"
+              data-text="sign_in_with"
+              data-shape="rectangular"
+              data-logo_alignment="left"
+            ></div>
+        </div>
         <p class="aha">Don't have an account? <span><a href="/"> Sign Up</a></span></p>
         </div>
     </div>

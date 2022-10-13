@@ -30,6 +30,9 @@ body{
     color: black;
     padding: 1rem;
     text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
     width: 35rem; 
     position: absolute;
     top: 50%;
@@ -79,9 +82,9 @@ input{
 }
 
 button{
-    margin: 2em auto 2em;
-    padding: 1rem 3rem;
-    font-size: 1.1rem;
+    margin: 1em auto 1em;
+    padding: 0.5rem 2.5rem;
+    font-size: 1rem;
     cursor: pointer;
     color: whitesmoke;
     background-color: #f13d38;
@@ -112,6 +115,12 @@ button:hover{
 a{
     font-weight: 700;
     color: #174D66;
+}
+
+.google-div{
+   display: flex;
+   justify-content: center;
+   margin: 1rem 0;
 }
 
 /* ------------------media------------------------ */
